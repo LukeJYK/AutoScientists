@@ -77,8 +77,8 @@ def main():
     ]
     if not args.no_prefix_caching:
         cmd.append("--enable-prefix-caching")
-    if not args.no_auto_tool_choice:
-        cmd += ["--enable-auto-tool-choice", "--tool-call-parser", args.tool_call_parser]
+    # if not args.no_auto_tool_choice:
+    #     cmd += ["--enable-auto-tool-choice", "--tool-call-parser", args.tool_call_parser]
     if args.api_key:
         cmd += ["--api-key", args.api_key]
     elif args.host != "127.0.0.1":
