@@ -23,6 +23,8 @@ DEFAULT_MODEL = os.environ.get("VLLM_MODEL", "/projects/jiangyank/models/Qwen3-C
 def parse_args():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--model", default=DEFAULT_MODEL)
+    p.add_argument("--served-model-name", default=None,
+                   help="name clients must use in the 'model' field (default: basename of --model)")
     p.add_argument("--host", default="0.0.0.0")
     p.add_argument("--port", type=int, default=8000)
     p.add_argument("--max-model-len", type=int, default=32768)
@@ -54,8 +56,11 @@ def main():
     if shutil.which("vllm") is None:
         sys.exit("vllm CLI not found on PATH. Install it first: pip install vllm")
 
+    served_name = args.served_model_name or os.path.basename(os.path.normpath(args.model))
+
     cmd = [
         "vllm", "serve", args.model,
+        "--served-model-name", served_name,
         "--host", args.host,
         "--port", str(args.port),
         "--max-model-len", str(args.max_model_len),
@@ -75,6 +80,7 @@ def main():
         print("Waiting for server to become ready...")
         if wait_for_server(display_host, args.port):
             print(f"\nServer ready at {base_url}")
+            print(f"Served model name (use this in the 'model' field): {served_name}")
             print("Point Claude Code at it with:")
             print(f"  export ANTHROPIC_BASE_URL={base_url}")
             print("  export ANTHROPIC_AUTH_TOKEN=local")
