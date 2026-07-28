@@ -25,14 +25,22 @@ def parse_args():
     p.add_argument("--model", default=DEFAULT_MODEL)
     p.add_argument("--served-model-name", default=None,
                    help="name clients must use in the 'model' field (default: basename of --model)")
-    p.add_argument("--host", default="0.0.0.0")
+    p.add_argument("--host", default="127.0.0.1",
+                   help="0.0.0.0 exposes the server on the network with no auth by default — "
+                        "only widen this if you also set --api-key")
     p.add_argument("--port", type=int, default=8000)
+    p.add_argument("--api-key", default=None,
+                   help="require this bearer token for requests — strongly recommended if --host is not 127.0.0.1")
     p.add_argument("--max-model-len", type=int, default=32768)
     p.add_argument("--max-num-seqs", type=int, default=16,
                    help="max concurrent sequences — set >= number of agents you'll run in parallel")
     p.add_argument("--gpu-memory-utilization", type=float, default=0.90)
     p.add_argument("--no-prefix-caching", action="store_true",
                    help="disable KV-cache reuse across requests sharing the same system prompt")
+    p.add_argument("--tool-call-parser", default="qwen3_coder",
+                   help="vLLM tool-call parser matching your model family — required for Claude Code's tool use")
+    p.add_argument("--no-auto-tool-choice", action="store_true",
+                   help="disable --enable-auto-tool-choice (Claude Code needs this on to call tools at all)")
     return p.parse_args()
 
 
@@ -69,11 +77,18 @@ def main():
     ]
     if not args.no_prefix_caching:
         cmd.append("--enable-prefix-caching")
+    if not args.no_auto_tool_choice:
+        cmd += ["--enable-auto-tool-choice", "--tool-call-parser", args.tool_call_parser]
+    if args.api_key:
+        cmd += ["--api-key", args.api_key]
+    elif args.host != "127.0.0.1":
+        print("WARNING: binding to a non-loopback host with no --api-key — "
+              "the model will be reachable by anyone who can route to this address.")
 
     print(f"Launching: {' '.join(cmd)}")
     proc = subprocess.Popen(cmd)
 
-    display_host = "localhost" if args.host == "0.0.0.0" else args.host
+    display_host = "localhost" if args.host in ("0.0.0.0", "127.0.0.1") else args.host
     base_url = f"http://{display_host}:{args.port}"
 
     try:
