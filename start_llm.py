@@ -31,7 +31,9 @@ def parse_args():
     p.add_argument("--port", type=int, default=8000)
     p.add_argument("--api-key", default=None,
                    help="require this bearer token for requests — strongly recommended if --host is not 127.0.0.1")
-    p.add_argument("--max-model-len", type=int, default=32768)
+    p.add_argument("--max-model-len", type=int, default=131072,
+                   help="Claude Code's own system prompt + tool schemas alone can run ~30k tokens, "
+                        "so this needs real headroom beyond your task content")
     p.add_argument("--max-num-seqs", type=int, default=16,
                    help="max concurrent sequences — set >= number of agents you'll run in parallel")
     p.add_argument("--gpu-memory-utilization", type=float, default=0.90)
