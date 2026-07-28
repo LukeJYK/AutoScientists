@@ -37,10 +37,10 @@ def parse_args():
     p.add_argument("--gpu-memory-utilization", type=float, default=0.90)
     p.add_argument("--no-prefix-caching", action="store_true",
                    help="disable KV-cache reuse across requests sharing the same system prompt")
-    p.add_argument("--tool-call-parser", default="qwen3_coder",
-                   help="vLLM tool-call parser matching your model family — required for Claude Code's tool use")
-    p.add_argument("--no-auto-tool-choice", action="store_true",
-                   help="disable --enable-auto-tool-choice (Claude Code needs this on to call tools at all)")
+    # p.add_argument("--tool-call-parser", default="qwen3_coder",
+    #                help="vLLM tool-call parser matching your model family — required for Claude Code's tool use")
+    # p.add_argument("--no-auto-tool-choice", action="store_true",
+    #                help="disable --enable-auto-tool-choice (Claude Code needs this on to call tools at all)")
     return p.parse_args()
 
 
