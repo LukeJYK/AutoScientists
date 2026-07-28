@@ -17,8 +17,7 @@ import time
 import urllib.error
 import urllib.request
 
-# TODO: verify this is the exact Hugging Face repo id you want before running.
-DEFAULT_MODEL = os.environ.get("VLLM_MODEL", "Qwen/Qwen3-Coder-30B-A3B-Instruct")
+DEFAULT_MODEL = os.environ.get("VLLM_MODEL", "/projects/jiangyank/models/Qwen3-Coder-30B-A3B-Instruct/")
 
 
 def parse_args():
