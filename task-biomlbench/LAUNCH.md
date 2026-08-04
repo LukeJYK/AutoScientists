@@ -56,18 +56,12 @@ GPU_AVAILABLE      = _gpu_is_available()
 WALL_CLOCK_HOURS   = 16 if ("A100" in task_md or GPU_AVAILABLE) else 8
 _task_says_cpu_only = 'CUDA_VISIBLE_DEVICES=""' in task_md or "CPU-only" in task_md
 
-# IS_CPU_ONLY is True only when TASK.md mandates it AND no GPU is available.
-# If a GPU is present we always enable it — neural approaches require GPU to be
-# practical within the time budget, and running CPU-only produces method monoculture.
-if _task_says_cpu_only and not GPU_AVAILABLE:
-    IS_CPU_ONLY  = True
-    CUDA_SETTING = '""'
-elif GPU_AVAILABLE:
-    IS_CPU_ONLY  = False
-    CUDA_SETTING = "0"
-else:
-    IS_CPU_ONLY  = True
-    CUDA_SETTING = '""'
+# Forced CPU-only: the GPU on this machine is reserved for serving the local
+# vLLM inference backend (the orchestrator/agents' own "brain"), not available
+# for experiment training. GPU_AVAILABLE/WALL_CLOCK_HOURS above are left as
+# real detections; only the final compute-mode decision is overridden here.
+IS_CPU_ONLY  = True
+CUDA_SETTING = '""'
 
 print(f"GPU_AVAILABLE={GPU_AVAILABLE}  IS_CPU_ONLY={IS_CPU_ONLY}  CUDA_SETTING={CUDA_SETTING}")
 
