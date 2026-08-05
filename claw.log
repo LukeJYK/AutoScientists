@@ -1,0 +1,88 @@
+nohup: ignoring input
+ClawInstitute running on http://localhost:3000
+API:    http://localhost:3000/api/v1
+Token:  claw_183cab931a5579ed35e4e6f2e1c8fc4f8ff84fcfdf3f68b58c34b9b6d74a4625
+(also stored in ~/.clawinstitute/token; export CLAWINSTITUTE_TOKEN to override)
+Frontend: http://localhost:3001
+▲ Next.js 16.1.6
+- Local:         http://127.0.0.1:3001
+- Network:       http://127.0.0.1:3001
+
+✓ Starting...
+✓ Ready in 186ms
+[0mPOST /api/v1/workshops [32m200[0m 112.059 ms - -[0m
+[0mPOST /api/v1/agents/register [32m200[0m 85.204 ms - 286[0m
+[0mPOST /api/v1/agents/register [32m200[0m 89.853 ms - 261[0m
+[0mPOST /api/v1/agents/register [32m200[0m 80.710 ms - 261[0m
+[0mPOST /api/v1/agents/register [32m200[0m 83.007 ms - 261[0m
+[0mPOST /api/v1/agents/register [32m200[0m 70.723 ms - 261[0m
+[0mPOST /api/v1/agents/register [32m200[0m 101.576 ms - 261[0m
+[0mPOST /api/v1/agents/register [32m200[0m 71.684 ms - 261[0m
+[0mPOST /api/v1/agents/register [32m200[0m 82.955 ms - 281[0m
+[0mPOST /api/v1/agents/register [32m200[0m 70.040 ms - 281[0m
+[0mPOST /api/v1/agents/register [32m200[0m 70.848 ms - 281[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 64.962 ms - 92[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 70.904 ms - 89[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 69.646 ms - 89[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 51.606 ms - 89[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 55.322 ms - 89[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 47.838 ms - 89[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 75.734 ms - 89[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 68.006 ms - 93[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 65.023 ms - 93[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 71.254 ms - 93[0m
+[0mPOST /api/v1/workspaces [32m200[0m 117.969 ms - 348[0m
+[0mPUT /api/v1/workspaces/f1c3ed70-3496-4c20-b69b-698aed965da3/files/task.md [32m200[0m 144.250 ms - 69[0m
+[0mPUT /api/v1/workspaces/f1c3ed70-3496-4c20-b69b-698aed965da3/files/champion.md [32m200[0m 106.619 ms - 73[0m
+[0mPUT /api/v1/workspaces/f1c3ed70-3496-4c20-b69b-698aed965da3/files/knowledge/patterns.md [32m200[0m 76.336 ms - 83[0m
+[0mPUT /api/v1/workspaces/f1c3ed70-3496-4c20-b69b-698aed965da3/files/knowledge/exhausted.md [32m200[0m 93.192 ms - 84[0m
+[0mPUT /api/v1/workspaces/f1c3ed70-3496-4c20-b69b-698aed965da3/files/teams/roster.md [32m200[0m 86.555 ms - 77[0m
+[0mPUT /api/v1/workspaces/f1c3ed70-3496-4c20-b69b-698aed965da3/files/agents/caco_local1_monitor.md [32m200[0m 82.993 ms - 91[0m
+[0mPUT /api/v1/workspaces/f1c3ed70-3496-4c20-b69b-698aed965da3/files/agents/caco_local1_gpu1.md [32m200[0m 98.803 ms - 88[0m
+[0mPUT /api/v1/workspaces/f1c3ed70-3496-4c20-b69b-698aed965da3/files/agents/caco_local1_gpu2.md [32m200[0m 96.217 ms - 88[0m
+[0mPUT /api/v1/workspaces/f1c3ed70-3496-4c20-b69b-698aed965da3/files/agents/caco_local1_gpu3.md [32m200[0m 76.232 ms - 88[0m
+[0mPUT /api/v1/workspaces/f1c3ed70-3496-4c20-b69b-698aed965da3/files/agents/caco_local1_gpu4.md [32m200[0m 94.612 ms - 88[0m
+[0mPUT /api/v1/workspaces/f1c3ed70-3496-4c20-b69b-698aed965da3/files/agents/caco_local1_gpu5.md [32m200[0m 130.688 ms - 88[0m
+[0mPUT /api/v1/workspaces/f1c3ed70-3496-4c20-b69b-698aed965da3/files/agents/caco_local1_gpu6.md [32m200[0m 73.924 ms - 88[0m
+[0mPUT /api/v1/workspaces/f1c3ed70-3496-4c20-b69b-698aed965da3/files/agents/caco_local1_analyst1.md [32m200[0m 37.406 ms - 92[0m
+[0mPUT /api/v1/workspaces/f1c3ed70-3496-4c20-b69b-698aed965da3/files/agents/caco_local1_analyst2.md [32m200[0m 33.013 ms - 92[0m
+[0mPUT /api/v1/workspaces/f1c3ed70-3496-4c20-b69b-698aed965da3/files/agents/caco_local1_analyst3.md [32m200[0m 40.576 ms - 92[0m
+[0mPOST /api/v1/posts [33m400[0m 0.701 ms - 43[0m
+[0mPOST /api/v1/workshops [32m200[0m 23.931 ms - -[0m
+[0mPOST /api/v1/agents/register [32m200[0m 25.315 ms - 286[0m
+[0mPOST /api/v1/agents/register [32m200[0m 17.873 ms - 261[0m
+[0mPOST /api/v1/agents/register [32m200[0m 20.172 ms - 261[0m
+[0mPOST /api/v1/agents/register [32m200[0m 17.783 ms - 261[0m
+[0mPOST /api/v1/agents/register [32m200[0m 16.418 ms - 261[0m
+[0mPOST /api/v1/agents/register [32m200[0m 16.306 ms - 261[0m
+[0mPOST /api/v1/agents/register [32m200[0m 15.992 ms - 261[0m
+[0mPOST /api/v1/agents/register [32m200[0m 29.939 ms - 281[0m
+[0mPOST /api/v1/agents/register [32m200[0m 21.683 ms - 281[0m
+[0mPOST /api/v1/agents/register [32m200[0m 15.571 ms - 281[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 20.804 ms - 92[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 25.226 ms - 89[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 27.376 ms - 89[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 22.497 ms - 89[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 20.490 ms - 89[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 22.683 ms - 89[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 21.479 ms - 89[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 23.334 ms - 93[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 23.508 ms - 93[0m
+[0mPOST /api/v1/workshops/ar_caco_local1/subscribe [32m200[0m 22.018 ms - 93[0m
+[0mPOST /api/v1/workspaces [32m200[0m 15.700 ms - 348[0m
+[0mPUT /api/v1/workspaces/db9727da-86d1-42f6-9a4f-1a9250922bc0/files/task.md [32m200[0m 46.804 ms - 69[0m
+[0mPUT /api/v1/workspaces/db9727da-86d1-42f6-9a4f-1a9250922bc0/files/champion.md [32m200[0m 68.959 ms - 73[0m
+[0mPUT /api/v1/workspaces/db9727da-86d1-42f6-9a4f-1a9250922bc0/files/knowledge/patterns.md [32m200[0m 61.740 ms - 83[0m
+[0mPUT /api/v1/workspaces/db9727da-86d1-42f6-9a4f-1a9250922bc0/files/knowledge/exhausted.md [32m200[0m 62.484 ms - 84[0m
+[0mPUT /api/v1/workspaces/db9727da-86d1-42f6-9a4f-1a9250922bc0/files/teams/roster.md [32m200[0m 31.464 ms - 77[0m
+[0mPUT /api/v1/workspaces/db9727da-86d1-42f6-9a4f-1a9250922bc0/files/agents/caco_local1_monitor.md [32m200[0m 29.386 ms - 91[0m
+[0mPUT /api/v1/workspaces/db9727da-86d1-42f6-9a4f-1a9250922bc0/files/agents/caco_local1_gpu1.md [32m200[0m 34.217 ms - 88[0m
+[0mPUT /api/v1/workspaces/db9727da-86d1-42f6-9a4f-1a9250922bc0/files/agents/caco_local1_gpu2.md [32m200[0m 29.774 ms - 88[0m
+[0mPUT /api/v1/workspaces/db9727da-86d1-42f6-9a4f-1a9250922bc0/files/agents/caco_local1_gpu3.md [32m200[0m 29.131 ms - 88[0m
+[0mPUT /api/v1/workspaces/db9727da-86d1-42f6-9a4f-1a9250922bc0/files/agents/caco_local1_gpu4.md [32m200[0m 32.137 ms - 88[0m
+[0mPUT /api/v1/workspaces/db9727da-86d1-42f6-9a4f-1a9250922bc0/files/agents/caco_local1_gpu5.md [32m200[0m 29.815 ms - 88[0m
+[0mPUT /api/v1/workspaces/db9727da-86d1-42f6-9a4f-1a9250922bc0/files/agents/caco_local1_gpu6.md [32m200[0m 29.462 ms - 88[0m
+[0mPUT /api/v1/workspaces/db9727da-86d1-42f6-9a4f-1a9250922bc0/files/agents/caco_local1_analyst1.md [32m200[0m 33.812 ms - 92[0m
+[0mPUT /api/v1/workspaces/db9727da-86d1-42f6-9a4f-1a9250922bc0/files/agents/caco_local1_analyst2.md [32m200[0m 31.453 ms - 92[0m
+[0mPUT /api/v1/workspaces/db9727da-86d1-42f6-9a4f-1a9250922bc0/files/agents/caco_local1_analyst3.md [32m200[0m 43.271 ms - 92[0m
+[0mPOST /api/v1/posts [33m400[0m 0.402 ms - 43[0m
