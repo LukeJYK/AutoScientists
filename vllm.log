@@ -604,3 +604,56 @@ nohup: ignoring input
 (APIServer pid=3866065) INFO:     127.0.0.1:40636 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
 (APIServer pid=3866065) INFO 08-05 13:50:30 [loggers.py:310] Engine 000: Avg prompt throughput: 68.5 tokens/s, Avg generation throughput: 65.3 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 94.2%
 (APIServer pid=3866065) INFO 08-05 13:50:40 [loggers.py:310] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 94.2%
+(APIServer pid=3866065) INFO:     127.0.0.1:52506 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:52520 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:52506 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO 08-05 15:36:41 [loggers.py:310] Engine 000: Avg prompt throughput: 3750.2 tokens/s, Avg generation throughput: 9.9 tokens/s, Running: 1 reqs, Waiting: 0 reqs, GPU KV cache usage: 24.6%, Prefix cache hit rate: 94.0%
+(APIServer pid=3866065) INFO:     127.0.0.1:52506 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:52506 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:52506 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:52506 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:52506 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:52506 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:52506 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO 08-05 15:36:51 [loggers.py:310] Engine 000: Avg prompt throughput: 514.5 tokens/s, Avg generation throughput: 31.2 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 94.0%
+(APIServer pid=3866065) INFO:     127.0.0.1:52506 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:52506 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:52506 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:52506 - "POST /v1/messages/count_tokens?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:52506 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO 08-05 15:37:01 [loggers.py:310] Engine 000: Avg prompt throughput: 1506.8 tokens/s, Avg generation throughput: 42.9 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 94.0%
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO 08-05 15:37:11 [loggers.py:310] Engine 000: Avg prompt throughput: 559.9 tokens/s, Avg generation throughput: 17.8 tokens/s, Running: 1 reqs, Waiting: 0 reqs, GPU KV cache usage: 42.2%, Prefix cache hit rate: 94.1%
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages/count_tokens?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO 08-05 15:37:21 [loggers.py:310] Engine 000: Avg prompt throughput: 324.8 tokens/s, Avg generation throughput: 37.5 tokens/s, Running: 1 reqs, Waiting: 0 reqs, GPU KV cache usage: 51.3%, Prefix cache hit rate: 94.1%
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO 08-05 15:37:31 [loggers.py:310] Engine 000: Avg prompt throughput: 1167.2 tokens/s, Avg generation throughput: 62.1 tokens/s, Running: 1 reqs, Waiting: 0 reqs, GPU KV cache usage: 52.7%, Prefix cache hit rate: 94.2%
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO 08-05 15:37:41 [loggers.py:310] Engine 000: Avg prompt throughput: 49.3 tokens/s, Avg generation throughput: 71.4 tokens/s, Running: 1 reqs, Waiting: 0 reqs, GPU KV cache usage: 53.2%, Prefix cache hit rate: 94.2%
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO 08-05 15:37:51 [loggers.py:310] Engine 000: Avg prompt throughput: 32.3 tokens/s, Avg generation throughput: 68.5 tokens/s, Running: 1 reqs, Waiting: 0 reqs, GPU KV cache usage: 53.9%, Prefix cache hit rate: 94.3%
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO 08-05 15:38:01 [loggers.py:310] Engine 000: Avg prompt throughput: 90.5 tokens/s, Avg generation throughput: 69.5 tokens/s, Running: 1 reqs, Waiting: 0 reqs, GPU KV cache usage: 54.4%, Prefix cache hit rate: 94.4%
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO:     127.0.0.1:44288 - "POST /v1/messages?beta=true HTTP/1.1" 200 OK
+(APIServer pid=3866065) INFO 08-05 15:38:11 [loggers.py:310] Engine 000: Avg prompt throughput: 8.8 tokens/s, Avg generation throughput: 71.8 tokens/s, Running: 1 reqs, Waiting: 0 reqs, GPU KV cache usage: 54.9%, Prefix cache hit rate: 94.5%
+(APIServer pid=3866065) INFO 08-05 15:38:21 [loggers.py:310] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 22.3 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 94.5%
+(APIServer pid=3866065) INFO 08-05 15:38:31 [loggers.py:310] Engine 000: Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Waiting: 0 reqs, GPU KV cache usage: 0.0%, Prefix cache hit rate: 94.5%
